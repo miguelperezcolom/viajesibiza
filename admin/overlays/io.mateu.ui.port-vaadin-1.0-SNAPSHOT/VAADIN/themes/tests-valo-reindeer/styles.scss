@@ -1,8 +1,0 @@
-@import "variables";
-@import "addons.scss";
-@import "mateu.scss";
-
-.tests-valo-reindeer {
-  @include addons;
-  @include mateu;
-}
