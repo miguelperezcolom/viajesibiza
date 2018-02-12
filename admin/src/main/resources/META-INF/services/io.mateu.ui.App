@@ -1,0 +1,1 @@
+io.mateu.viajesibiza.admin.AdminApp
