@@ -16,6 +16,7 @@ public class ContextListener implements javax.servlet.ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
+        System.out.println("****CONTEXTLISTENER****");
         if ("yes".equalsIgnoreCase(System.getProperty("taskrunner")) || "true".equalsIgnoreCase(System.getProperty("taskrunner"))) {
             if (hiloTaskRunner == null) {
                 System.out.println("****ARRANCANDO TASKRUNNER****");
