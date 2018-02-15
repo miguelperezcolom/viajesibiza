@@ -27,6 +27,7 @@ public class Admin extends AbstractModule {
         m.add(new MDDAction("Users", User.class));
         m.add(new MDDAction("Actors", Actor.class));
 
+
         return m;
     }
 }
