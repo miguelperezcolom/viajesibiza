@@ -1,6 +1,7 @@
 package io.mateu.viajesibiza.admin;
 
 import io.mateu.erp.model.authentication.User;
+import io.mateu.erp.model.financials.Actor;
 import io.mateu.erp.model.monitoring.Alarm;
 import io.mateu.erp.model.monitoring.Watchdog;
 import io.mateu.erp.model.monitoring.Watcher;
@@ -24,6 +25,7 @@ public class Admin extends AbstractModule {
         List<MenuEntry> m = new ArrayList<>();
 
         m.add(new MDDAction("Users", User.class));
+        m.add(new MDDAction("Actors", Actor.class));
 
         return m;
     }
