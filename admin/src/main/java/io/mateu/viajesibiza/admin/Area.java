@@ -13,7 +13,7 @@ public class Area extends io.mateu.ui.core.client.app.AbstractArea {
 
     @Override
     public List<AbstractModule> getModules() {
-        List<AbstractModule> l = Lists.newArrayList(new Booking(), new Producto(), new Reports(), new Admin());
+        List<AbstractModule> l = Lists.newArrayList(new Confirm());
         if (MateuUI.hasPermission(1)) l = Lists.newArrayList(new Booking(), new Producto(), new Reports(), new Admin());
         return l;
     }
