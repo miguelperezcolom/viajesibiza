@@ -6,6 +6,7 @@ import io.mateu.erp.model.financials.Actor;
 import io.mateu.erp.model.monitoring.Alarm;
 import io.mateu.erp.model.monitoring.Watchdog;
 import io.mateu.erp.model.monitoring.Watcher;
+import io.mateu.erp.model.workflow.AbstractTask;
 import io.mateu.ui.core.client.app.AbstractModule;
 import io.mateu.ui.core.client.app.MateuUI;
 import io.mateu.ui.core.client.app.MenuEntry;
@@ -30,6 +31,8 @@ public class Admin extends AbstractModule {
         m.add(new MDDAction("Actors", Actor.class));
         if ("admin".equalsIgnoreCase(MateuUI.getApp().getUserData().getLogin())) {
             m.add(new MDDOpenEditorAction("AppConfig", AppConfig.class, 1l));
+
+            m.add(new MDDAction("Queue", AbstractTask.class));
         }
 
 
