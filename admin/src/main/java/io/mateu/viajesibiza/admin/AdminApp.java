@@ -20,7 +20,7 @@ public class AdminApp extends AbstractApplication
     }
 
     @Override
-    public List<AbstractArea> getAreas() {
+    public List<AbstractArea> buildAreas() {
         List<AbstractArea> l = new ArrayList<>();
         l.add(new Area());
         return l;

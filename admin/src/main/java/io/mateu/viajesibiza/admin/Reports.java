@@ -20,7 +20,7 @@ public class Reports extends AbstractModule {
     }
 
     @Override
-    public List<MenuEntry> getMenu() {
+    public List<MenuEntry> buildMenu() {
         List<MenuEntry> m = new ArrayList<>();
 
         m.add(new AbstractAction("Reprice") {
