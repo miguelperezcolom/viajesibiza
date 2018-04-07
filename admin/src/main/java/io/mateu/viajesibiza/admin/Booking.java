@@ -25,7 +25,7 @@ public class Booking extends AbstractModule {
         m.add(new AbstractAction("Transfers summary") {
             @Override
             public void run() {
-                MateuUI.openView(new TransfersSummaryView());
+                MateuUI.openView(new TransfersSummaryView(), isModifierPressed());
             }
         });
         m.add(new MDDAction("Bookings", TransferService.class));

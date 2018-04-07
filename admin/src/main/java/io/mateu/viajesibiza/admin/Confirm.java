@@ -26,7 +26,7 @@ public class Confirm extends AbstractModule {
         m.add(new AbstractAction("Pickup confirmation") {
             @Override
             public void run() {
-                MateuUI.openView(new PickupConfirmationView());
+                MateuUI.openView(new PickupConfirmationView(), isModifierPressed());
             }
         });
 
