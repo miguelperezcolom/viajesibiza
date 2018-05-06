@@ -1,5 +1,6 @@
 package io.mateu.viajesibiza.admin;
 
+import io.mateu.erp.client.booking.PickupTimeImportingView;
 import io.mateu.erp.client.booking.TransfersSummaryView;
 import io.mateu.erp.model.booking.transfer.TransferPointMapping;
 import io.mateu.erp.model.booking.transfer.TransferService;
@@ -28,9 +29,17 @@ public class Booking extends AbstractModule {
                 MateuUI.openView(new TransfersSummaryView(), isModifierPressed());
             }
         });
+
         m.add(new MDDAction("Bookings", TransferService.class));
 
         m.add(new MDDAction("Mapping", TransferPointMapping.class));
+
+        m.add(new AbstractAction("Upload pickup times") {
+            @Override
+            public void run() {
+                MateuUI.openView(new PickupTimeImportingView(), isModifierPressed());
+            }
+        });
 
         return m;
     }
