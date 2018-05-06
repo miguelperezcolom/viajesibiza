@@ -1,8 +1,9 @@
 package io.mateu.viajesibiza.admin;
 
-import io.mateu.erp.model.util.Helper;
+
 import io.mateu.ui.core.client.app.AbstractApplication;
 import io.mateu.ui.core.client.app.AbstractArea;
+import io.mateu.ui.mdd.server.util.Helper;
 
 import java.util.ArrayList;
 import java.util.List;
