@@ -10,6 +10,8 @@ import java.util.List;
 public class Area extends io.mateu.ui.core.client.app.AbstractArea {
     public Area() {
         super("Admin");
+
+        setPublicAccess(false);
     }
 
     @Override
