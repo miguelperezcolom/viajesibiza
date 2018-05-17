@@ -17,7 +17,7 @@ public class Area extends io.mateu.ui.core.client.app.AbstractArea {
     @Override
     public List<AbstractModule> getModules() {
         List<AbstractModule> l = super.getModules();
-        if (!MateuUI.hasPermission(1)) l = Lists.newArrayList(l.get(1));
+        if (!MateuUI.hasPermission(1) && MateuUI.hasPermission(2)) l = Lists.newArrayList(l.get(1));
         return l;
     }
 
